@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="header">
+        <div class="header-left">
+            <img src="imagens/logo.png" alt="Logo Pizzaria" class="logo">
+        </div>
+        <nav class="header-center">
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#quem-somos">Quem Somos</a></li>
+                <li><a href="#pratos">Pratos</a></li>
+                <li><a href="#locais">Locais de Entrega</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <a href="https://wa.me/seunumerodetelefone" target="_blank" class="btn-whatsapp">WhatsApp</a>
+            <img src="imagens/menu-hamburguer.png" alt="Menu Mobile" class="menu-mobile">
+        </div>
+    </header>
+    <!-- Menu Mobile Fixo -->
+    <img src="imagens/menu-hamburguer.png" alt="Menu Mobile" class="menu-mobile-fixo">
+
+    <!-- WhatsApp Fixo -->
+    <a href="https://wa.me/seunumerodetelefone" target="_blank" class="btn-whatsapp-fixo">📞</a>
+
+
+    <!-- INÍCIO -->
+    <section id="inicio">
+        <div class="inicio-left">
+            <div class="pizza-girada">
+                <!-- Aqui serão colocadas as 8 imagens da pizza via JS ou HTML -->
+            </div>
+        </div>
+        <div class="inicio-right">
+            <h1>Seja Bem-vindo!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
+        </div>
+    </section>
+
+    <!-- QUEM SOMOS -->
+    <section id="quem-somos">
+        <div class="video-bg">
+            <video autoplay muted loop>
+                <source src="imagens/video.mp4" type="video/mp4">
+            </video>
+            <div class="overlay"></div>
+        </div>
+        <div class="quem-somos-content">
+            <h2>Quem Somos</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
+        </div>
+    </section>
+
+    <!-- PRATOS -->
+    <section id="pratos">
+        <div class="pratos-bg"></div>
+        <div class="pratos-content">
+            <div class="quadrado">
+                <h3>Comidas</h3>
+                <p>Pequena descrição</p>
+                <button class="btn-galeria" data-tipo="comidas">Galeria</button>
+            </div>
+            <div class="quadrado">
+                <h3>Bebidas</h3>
+                <p>Pequena descrição</p>
+                <button class="btn-galeria" data-tipo="bebidas">Galeria</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCAIS DE ENTREGA -->
+    <section id="locais">
+        <div class="botoes-locais">
+            <button>Ceilândia Norte</button>
+            <button>Setor O</button>
+            <button>Sol Nascente</button>
+            <img src="imagens/entregador.gif" alt="Entregador" class="gif-entregador">
+            <button>Prive</button>
+            <button>M Norte</button>
+            <button>Expansão</button>
+        </div>
+        <div class="apps">
+            <button><a href="#" target="_blank">iFood</a></button>
+            <button><a href="#" target="_blank">UberEats</a></button>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section id="depoimentos">
+        <h2>Depoimentos</h2>
+        <p>O que nossos clientes dizem</p>
+        <div class="carousel">
+            <!-- Carrossel gerado via JS -->
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="linha-luminosa"></div>
+        <div class="footer-colunas">
+            <div class="coluna">
+                <img src="imagens/logo.png" alt="Logo" class="logo-footer">
+            </div>
+            <div class="coluna">
+                <h3>Contatos</h3>
+                <a href="#" target="_blank"><img src="imagens/facebook.png" alt="Facebook"></a>
+                <a href="#" target="_blank"><img src="imagens/instagram.png" alt="Instagram"></a>
+            </div>
+            <div class="coluna">
+                <h3>Endereço</h3>
+                <p>Rua Exemplo, 123 - Cidade - UF</p>
+                <img src="imagens/minimapa.png" alt="Mini Mapa">
+            </div>
+        </div>
+        <div class="assinatura">
+            <a href="https://wa.me/seunumerodetelefone" target="_blank">Corporate</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,265 @@
+/* RESET E BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 20px;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.8);
+  transition: top 0.3s;
+}
+
+header .menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+header .menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+header .menu li a:hover {
+  color: red;
+  transform: scale(1.2);
+  text-shadow: 0 0 10px #fff;
+}
+
+header .logo {
+  height: 50px;
+}
+
+.menu-mobile {
+    position: fixed;
+    display: none;
+    z-index: 1001;
+}
+/* Menu mobile no topo direito */
+.menu-mobile-fixo {
+    top: 20px;
+    right: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+/* WhatsApp redondo fixo no canto inferior direito */
+.btn-whatsapp-fixo {
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.btn-whatsapp {
+  padding: 10px 15px;
+  background: green;
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* SEÇÕES */
+section {
+  padding: 100px 20px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* INICIO */
+.inicio-left,
+.inicio-right {
+  width: 45%;
+}
+
+.inicio-right {
+  background: url('imagens/pano-quadriculado.png');
+  padding: 20px;
+}
+
+.pizza-girada {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: relative;
+  animation: girar 20s linear infinite;
+}
+
+/* QUEM SOMOS */
+.video-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.video-bg video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.quem-somos-content {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+/* PRATOS */
+.pratos-bg {
+  background: url('imagens/bg-pratos.jpg') no-repeat center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-attachment: fixed;
+}
+
+.pratos-content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.quadrado {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+}
+
+/* LOCAIS */
+.botoes-locais {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.gif-entregador {
+  position: absolute;
+  top: 50%;
+  left: -100px;
+  height: 50px;
+}
+
+/* DEPOIMENTOS */
+.carousel {
+  display: flex;
+  overflow: hidden;
+  gap: 20px;
+}
+
+.carousel img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+/* FOOTER */
+footer {
+  padding: 50px 20px;
+  background: #111;
+  position: relative;
+}
+
+.linha-luminosa {
+  height: 2px;
+  width: calc(100% - 2cm);
+  background: yellow;
+  margin: 0 auto;
+}
+
+.footer-colunas {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  border-top: 1px solid #fff;
+  padding-top: 20px;
+}
+
+.footer-colunas .coluna {
+  text-align: center;
+}
+
+.logo-footer {
+  animation: pulsar 2s infinite;
+}
+
+/* ANIMAÇÕES */
+@keyframes girar {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulsar {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* RESPONSIVO */
+@media(max-width:768px) {
+  .menu {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: block;
+  }
+}
