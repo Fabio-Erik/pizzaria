@@ -105,6 +105,33 @@ section {
   padding: 20px;
 }
 
+.pizza-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+}
+
+.fatia {
+  position: absolute;
+  width: 150px;        /* metade da pizza */
+  height: 150px;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0% 100%;
+}
+
+/* rotações */
+.fatia1 { transform: rotate(0deg)   translate(-50%, -100%); }
+.fatia2 { transform: rotate(45deg)  translate(-50%, -100%); }
+.fatia3 { transform: rotate(90deg)  translate(-50%, -100%); }
+.fatia4 { transform: rotate(135deg) translate(-50%, -100%); }
+.fatia5 { transform: rotate(180deg) translate(-50%, -100%); }
+.fatia6 { transform: rotate(225deg) translate(-50%, -100%); }
+.fatia7 { transform: rotate(270deg) translate(-50%, -100%); }
+.fatia8 { transform: rotate(315deg) translate(-50%, -100%); }
+
+
 .pizza-girada {
   width: 300px;
   height: 300px;
@@ -113,7 +140,7 @@ section {
   animation: girar 20s linear infinite;
 }
 
-/* QUEM SOMOS */
+
 .video-bg {
   position: absolute;
   width: 100%;
@@ -121,6 +148,7 @@ section {
   overflow: hidden;
   top: 0;
   left: 0;
+  z-index: -1;
 }
 
 .video-bg video {
