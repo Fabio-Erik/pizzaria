@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fornazzo Pizzaria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagens/logosfundo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="header">
+        <div class="header-left">
+            <img src="imagens/logosfundo.png" alt="Logo Pizzaria" class="logo">
+        </div>
+        <nav class="header-center">
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#quem-somos">Quem Somos</a></li>
+                <li><a href="#pratos">Pratos</a></li>
+                <li><a href="#locais">Locais de Entrega</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+            </ul>
+        </nav>
+        <a href="https://wa.me/seunumerodetelefone" target="_blank" class="btn-whatsapp">
+            <img src="imagens/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+        </a>
+
+    </header>
+
+    <!-- INÍCIO -->
+    <section id="inicio">
+        <div class="inicio-left">
+            <div class="pizza-container">
+                <img src="./imagens/burguer 1.jpeg" class="fatia fatia1">
+                <img src="./imagens/macarrão.jpeg" class="fatia fatia2">
+                <img src="./imagens/pizza1.png" class="fatia fatia3">
+            </div>
+        </div>
+        <div class="inicio-right">
+            <div class="video-bg">
+                <video autoplay muted loop>
+                    <source src="./imagens/video.mp4" type="video/mp4">
+                </video>
+                <div class="overlay"></div>
+            </div>
+            <h1>Fornazzo Pizzaria</h1>
+            <p>Onde a tradição encontra o sabor que não sai da memória.<br> </p>
+            <p><br></p>
+            <p>Sinta a crocância da massa artesanal, o molho de tomates frescos e aquele queijo derretido que abraça
+                cada ingrediente. Na Fornazzo, não entregamos apenas uma caixa; entregamos o ponto alto do seu dia.</p>
+        </div>
+    </section>
+
+    <!-- QUEM SOMOS -->
+    <section id="quem-somos">
+        <div class="quem-somos-content">
+            <h2>Muito além do forno: Conheça a nossa história</h2>
+            <img class="pizzaso" src="./imagens/pizza somos.jpg" alt="Pizza">
+            <p class="pri">A Fornazzo nasceu para elevar o padrão da sua pizza favorita. Não somos apenas uma cozinha;
+                somos um
+                laboratório de sabores focado em excelência.</p><br>
+            <p>Nossa Equipe: Formada por apaixonados que tratam cada disco de massa como uma obra de arte. Do mestre
+                pizzaiolo aos nossos entregadores, todos trabalham com um único objetivo: garantir que sua experiência
+                seja impecável.<br>
+                <br>
+                O Ambiente: Nosso espaço foi planejado para ser uma extensão da sua casa. Um ambiente leve, organizado e
+                onde o aroma do manjericão fresco e da massa assando dita o ritmo da nossa alegria.<br>
+                <br>
+                Nossos Pratos: Selecionamos cada fornecedor a dedo. Da farinha de alta qualidade aos recheios premium,
+                nossos pratos são o resultado de testes incansáveis para chegar ao equilíbrio perfeito entre leveza e
+                sabor.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- PRATOS -->
+    <section id="pratos">
+        <div class="pratos-bg"></div>
+
+
+        <div class="espelho prato">
+            <h3>Comidas</h3>
+            <p>Nossos pratos artesanais feitos com ingredientes selecionados.</p>
+            <button class="btn-galeria" data-tipo="comida">Ver galeria</button>
+        </div>
+
+        <div class="espelho prato">
+            <h3>Bebidas</h3>
+            <p>Bebidas geladas e drinks especiais para acompanhar sua refeição.</p>
+            <button class="btn-galeria" data-tipo="bebida">Ver galeria</button>
+        </div>
+    </section>
+
+    <div id="galeria-modal" class="galeria-modal">
+        <div class="galeria-espelho">
+            <button class="fechar-galeria">✖</button>
+            <div class="galeria-grid"></div>
+        </div>
+    </div>
+
+
+
+    <!-- LOCAIS DE ENTREGA -->
+    <section id="locais">
+        <div class="locais-bg"></div>
+        <div class="locais-container">
+
+            <div class="linha linha-topo">
+                <div class="espelho-local imagem">
+                    <img src="imagens/pizzaicon.png" alt="Mapa">
+                    <img src="imagens/entregador.png" alt="Mapa">
+                </div>
+
+
+                <div class="linha-pontos h" data-index="1"></div>
+                <div class="espelho-local">Ceilândia Norte</div>
+
+                <div class="linha-pontos h" data-index="2"></div>
+                <div class="espelho-local">Setor O</div>
+
+                <div class="linha-pontos h" data-index="3"></div>
+                <div class="espelho-local">Sol Nascente</div>
+            </div>
+
+            <div class="linha-vertical-pontos v" data-index="4"></div>
+
+            <div class="linha linha-baixo">
+                <div class="espelho-local">Prive</div>
+
+                <div class="linha-pontos h" data-index="5"></div>
+                <div class="espelho-local">M Norte</div>
+
+                <div class="linha-pontos h" data-index="6"></div>
+                <div class="espelho-local">Expansão</div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- DEPOIMENTOS -->
+    <section id="depoimentos">
+
+        <div class="depoimentos-container">
+            <div class="coluna">
+                <div class="espelho depoimento"><img src="imagens/depoimento (1).png"></div>
+                <div class="espelho depoimento"><img src="imagens/depoimento (2).png"></div>
+                <div class="espelho depoimento"><img src="imagens/depoimento (3).png"></div>
+            </div>
+
+            <div class="coluna centro">
+                <div class="espelho texto">
+                    <h3>Obrigado!</h3>
+                    <p>Agradecemos a todos os nossos clientes pela confiança e carinho<br> ❤️</p>
+                </div>
+            </div>
+
+            <div class="coluna">
+                <div class="espelho depoimento"><img src="imagens/depoimento (4).png"></div>
+                <div class="espelho depoimento"><img src="imagens/depoimento (5).png"></div>
+                <div class="espelho depoimento"><img src="imagens/depoimento (6).png"></div>
+            </div>
+        </div>
+    </section>
+    <div id="depoimento-modal" class="depoimento-modal">
+        <button class="fechar-depoimento">✖</button>
+        <img id="depoimento-modal-img" src="">
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="linha-luminosa"></div>
+        <div class="footer-colunas">
+            <div class="coluna">
+                <div class="logo-footer-wrapper">
+                    <img src="imagens/logo-removebg-preview.png" alt="Logo" class="logo-footer">
+                </div>
+            </div>
+            <div class="coluna">
+                <h3>Contatos</h3>
+                <a href="#" target="_blank" class="social">
+                    <img src="imagens/facebook.png" alt="Facebook">
+                    <span>Facebook</span>
+                </a>
+
+                <a href="#" target="_blank" class="social">
+                    <img src="imagens/instagram.png" alt="Instagram">
+                    <span>Instagram</span>
+                </a>
+
+            </div>
+            <div class="coluna">
+                <h3>Endereço</h3>
+                <p>Qno 18, Conjunto G, Lote 7<br> Ceilândia Norte , Brasília - DF</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.1849841413446!2d-48.133674799999994!3d-15.7941971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935bcb8e5e720fdf%3A0x80e48fcb5481788a!2sFornazzo%20Pizzaria!5e0!3m2!1spt-PT!2sbr!4v1767039231422!5m2!1spt-PT!2sbr"
+                    class="mini-mapa" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+            </div>
+        </div>
+    </footer>
+
+    <div class="assinatura">
+        <p>© 2025 Todos os direitos reservados. 
+        <a href="https://wa.me/61981496408" target="_blank">FE Pages</a></p>
+    </div>
+
+
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>
